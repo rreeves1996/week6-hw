@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<body class="min-100-vh flex-column">
+    <header class="jumbotron p-5 text-center bg-primary ">
+      <h1>Weather Dashboard</h1>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <div class="city-search col-sm-3">
+                <h2>Search for a city:</h2>
+                <input id="search" class="search" type="search" placeholder="Search..."><br>
+                <button id="search-submit" class="search-submit">Search</button>
+                <h3>History:</h3>
+                <ul id="search-history" class="search-history">
+                    
+                </ul>
+            </div>
+            <div class="col-sm-9">
+                <div class="city-display column">
+                    <h2><span class="city-name" id="city-name">cityname</span> - <span class="current-date" id="current-date">1/1/1111</span><img id="icon" src="#"></h2>
+                    <p>Temp: <span id="temp"></span></p>
+                    <p>Wind: <span id="wind"></span></p>
+                    <p>Humidity: <span id="humid"></span></p>
+                    <p>UV Index: <span id="uv"></span></p>
+                </div>
+                <div class="city-forecast column">
+                    <h2>5-Day Forecast:</h2>
+                    <div class="row">
+                        <div class="column">
+                            <h3><span id="forecast-date">1/1/1111</span></h3>
+                            <p>Temp: <span id="forecast-temp">1</span></p>
+                            <p>Wind: <span id="forecast-wind">2</span></p>
+                            <p>Humidity: <span id="forecast-humid">3</span></p>
+                            <p>UV Index: <span id="forecast-uv">4</span></p>
+                        </div>
+                        <div class="column">
+                            <h3><span id="forecast-date">1/1/1111</span></h3>
+                            <p>Temp: <span id="forecast-temp">1a</span></p>
+                            <p>Wind: <span id="forecast-wind">2a</span></p>
+                            <p>Humidity: <span id="forecast-humid">3a</span></p>
+                            <p>UV Index: <span id="forecast-uv">4a</span></p>
+                        </div>
+                        <div class="column">
+                            <h3><span id="forecast-date">1/1/1111</span></h3>
+                            <p>Temp: <span id="forecast-temp">1b</span></p>
+                            <p>Wind: <span id="forecast-wind">2b</span></p>
+                            <p>Humidity: <span id="forecast-humid">3b</span></p>
+                            <p>UV Index: <span id="forecast-uv">4b</span></p>
+                        </div>
+                        <div class="column">
+                            <h3><span id="forecast-date">1/1/1111</span></h3>
+                            <p>Temp: <span id="forecast-temp">1c</span></p>
+                            <p>Wind: <span id="forecast-wind">2c</span></p>
+                            <p>Humidity: <span id="forecast-humid">3c</span></p>
+                            <p>UV Index: <span id="forecast-uv">4c</span></p>
+                        </div>
+                        <div class="column">
+                            <h3><span id="forecast-date">1/1/1111</span></h3>
+                            <p>Temp: <span id="forecast-temp">1d</span></p>
+                            <p>Wind: <span id="forecast-wind"></span></p>
+                            <p>Humidity: <span id="forecast-humid">3d</span></p>
+                            <p>UV Index: <span id="forecast-uv">4d</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
